@@ -49,17 +49,20 @@ $introData = getSpecificPostDataByCategory('post', 6);
                 <h2><?php echo get_the_title(); ?></h2>
 
                 <div class="text">
-                    <?php echo get_the_content(); ?>
+                    <?php the_content(); ?>
                 </div>
 
                 <div class="row g-5">
                     <div class="col-12 col-md-4">
+                        <h3><?php _e('Round 1', 'retro'); ?></h3>
                         <?php echo $round_1_text; ?>
                     </div>
                     <div class="col-12 col-md-4">
+                        <h3><?php _e('Round 2', 'retro'); ?></h3>
                         <?php echo $round_2_text; ?>
                     </div>
                     <div class="col-12 col-md-4">
+                        <h3><?php _e('Round 3', 'retro'); ?></h3>
                         <?php echo $round_3_text; ?>
                     </div>
                 </div>

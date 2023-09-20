@@ -1,6 +1,8 @@
 <!-- start:header-over -->
 <div class="header-over">
 
+    <div class="star"></div>
+
     <header class="header">
 
         <!-- start:container -->
@@ -67,7 +69,7 @@
 
     <?php if( is_front_page() ): ?>
 
-        <?php $introData = getSpecificPostDataByCategory('post', 3) ?>
+        <?php $introData = getSpecificPostDataByCategory('post', 4) ?>
 
         <?php if( $introData ): ?>
 
@@ -84,6 +86,10 @@
                             <div class="text">
                                 <?php echo $introData['post_content']; ?>
                             </div>
+                        </div>
+                        
+                        <div class="col-12 col-md-6 intro-image">
+                            <img src="<?php echo TEMPLATEDIR; ?>/images/intro-image.svg" alt="Intro Image">
                         </div>
 
                     </div>
