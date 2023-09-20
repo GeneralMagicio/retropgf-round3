@@ -22,7 +22,7 @@ a {
 }
 
 a:hover {
-    color: #000000;
+    color: #212327;
     text-decoration: none;
     outline: 0;
 }
@@ -33,7 +33,7 @@ strong, b {
 
 h1, h2, h3, h4, h5 {
     font-weight: 700;
-    color: #000000;
+    color: #212327;
 }
 
 input:focus, input.form-control:focus {
@@ -61,25 +61,23 @@ input:focus, input.form-control:focus {
    Header
    ========================================================================== */
 
-.header-over{
+.header-over {
+    padding-bottom: 4em;
     background-color: #FF0420;
+    background-image: url("../images/star-bg.svg");
+    background-repeat: no-repeat;
+    background-position: -10% 2%;
 }
 
 .header {
-    padding: 0 0 1em 0;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
-}
-
-header.sticky {
-    width: 100%;
-    position: fixed !important;
-    top: 0;
-    z-index: 50;
-    background-color: #FFFFFF;
+    padding: 2em 0;
 }
 
 .header .logo {
     display: block;
+    background: none;
+    color: transparent;
+    text-decoration: none;
 }
 
 .header .navbar {
@@ -92,125 +90,36 @@ header.sticky {
     position: relative;
     margin: 0.5em 1em 0 1em;
     padding: 0;
-    font-size: 1.125rem;
-    font-weight: 700;
-    color: #3D3D3D;
-    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffffff;
     transition: all 0.75s ease-in-out;
 }
 
 .header .navbar-nav .active .nav-link,
 .header .navbar-nav .nav-link:hover,
 .header .navbar-nav .nav-link:focus {
-    color: #f9d309;
+    text-shadow: 0 0 0.25em #000000;
 }
 
-.header .navbar-nav .yellow .nav-link {
-    background: #f9d309;
-    border-radius: 7px;
-    margin: 0 0 0 1.25em;
-    padding: 0.5em 1em;
-    font-weight: 600;
-    font-size: 1.125rem;
-    color: #000000;
-    letter-spacing: 0;
-    text-transform: uppercase;
-    transition: all 0.3s ease-in-out;
+.header-bottom h1 {
+    margin: 0.75em 0 0.5em 0;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.625rem;
+    line-height: 5.6875rem;
+    color: #FFFFFF;
 }
 
-.header .navbar-nav .yellow .nav-link:hover,
-.header .navbar-nav .yellow .nav-link:focus {
-    transform: scale(1.1);
-    box-shadow: 0px 7px 25px -10px rgba(0, 0, 0, 0.5);
-    color: #000000;
-}
-
-.header .dropdown-toggle::after {
-    display: none;
-}
-
-.header .dropdown-menu {
-    padding: 0.5em;
-    border-radius: 0;
-    border: 1px solid #56C400;
-}
-
-.header .dropdown-menu a {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #000000;
-    background: none;
-}
-
-.header .dropdown-menu a.active,
-.header .dropdown-menu a:hover {
-    background: none;
-    color: #56C400;
-}
-
-.socials a {
-    display: inline-block;
-    margin: 0 0 0 .35em;
-    width: 46px;
-    height: 46px;
-    text-indent: -99999px;
-    transition: all 0.75s ease-in-out;
-}
-
-.facebook {
-    background: url("../images/icon-facebook.svg") no-repeat center center;
-}
-
-.facebook:hover {
-    background: url("../images/icon-facebook-hover.svg") no-repeat center center;
-}
-
-.linkedin {
-    background: url("../images/icon-linkedin.svg") no-repeat center center;
-}
-
-.linkedin:hover {
-    background: url("../images/icon-linkedin-hover.svg") no-repeat center center;
-}
-
-.youtube {
-    background: url("../images/icon-youtube.svg") no-repeat center center;
-}
-
-.youtube:hover {
-    background: url("../images/icon-youtube-hover.svg") no-repeat center center;
-}
-
-.search-holder-inner {
-    background: #D9D9D9;
-    border-radius: 90px;
-    padding: 0.5em 1em;
-}
-
-.search-holder-inner .search-field {
-    margin: 3px 0 0 0;
-    background: none;
-    border: none;
-    box-shadow: none;
-}
-
-.search-holder-inner .search-field:focus {
-    box-shadow: none;
-}
-
-.search-submit {
-    width: 35px;
-    height: 35px;
-    border: none;
-    background: url("../images/icon-search.svg") no-repeat center center;
-    text-indent: -9999px;
-    cursor: pointer;
-}
-
-.search-submit:hover,
-.search-submit:focus {
-    background: url("../images/icon-search.svg") no-repeat center center;
-    box-shadow: none;
+.header-bottom .text {
+    padding-right: 5em;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 2.4375rem;
+    color: #FFFFFF;
 }
 
 /* ==========================================================================
@@ -590,14 +499,6 @@ header.sticky {
 .hometabs .kt-tabs-content-wrap .wp-block-kadence-tab .wp-block-kadence-advancedbtn .kb-button:hover {
     color: #FFFFFF !important;
     transform: scale(1.1);
-}
-
-.home p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.125rem;
-    line-height: 1.5;
-    color: #000000;
 }
 
 .home-projekti,
