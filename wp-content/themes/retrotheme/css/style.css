@@ -176,6 +176,35 @@ input:focus, input.form-control:focus {
 }
 
 /* ==========================================================================
+   Home Founded
+   ========================================================================== */
+
+.home-founded{
+    margin: 0 0 5em 0;
+    background: url("../images/home-founded-bg.svg") right center no-repeat;
+    background-size: contain;
+}
+
+.home-founded h2 {
+    margin: 0.5em 0 1.25em 0;
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 4.5rem;
+    line-height: 5.6875rem;
+    color: #212327;
+}
+
+.home-founded .text{
+    margin: 0 0 3em 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.4375rem;
+    color: #212327;
+}
+
+/* ==========================================================================
    Media query
    ========================================================================== */
 
@@ -302,6 +331,10 @@ input:focus, input.form-control:focus {
         padding: 5em 0;
         background: url("../images/home-about-bg.svg") center center no-repeat;
         background-size: cover;
+    }
+
+    .home-founded{
+        background-size: 50%;
     }
 
 }
