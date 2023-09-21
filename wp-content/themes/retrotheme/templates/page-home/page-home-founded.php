@@ -1,6 +1,6 @@
 <?php
 
-$categoryID = 5;
+$categoryID = 6;
 
 $queryArgs = array(
     'post_type' => 'post',
@@ -47,10 +47,10 @@ $introData = getSpecificPostDataByCategory('post', 6);
 
                     <div class="col-12 col-md-4">
 
-                        <h2>Previously Funded Projects</h2>
+                        <h2><?php the_title(); ?></h2>
 
                         <div class="text">
-                            <p>Discover the impactful projects that have received support through Retroactive Public Goods Funding (RetroPGF). These initiatives have demonstrated a commitment to driving positive change in the Optimism Collective.</p>
+                            <?php the_content(); ?>
                         </div>
 
                     </div>

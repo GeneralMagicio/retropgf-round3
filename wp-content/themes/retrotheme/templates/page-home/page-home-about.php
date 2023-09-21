@@ -52,7 +52,7 @@ $introData = getSpecificPostDataByCategory('post', 6);
                     <?php the_content(); ?>
                 </div>
 
-                <div class="row g-5">
+                <div class="row g-0 g-md-5">
                     <div class="col-12 col-md-4">
                         <h3><?php _e('Round 1', 'retro'); ?></h3>
                         <p>

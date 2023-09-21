@@ -139,13 +139,13 @@ input:focus, input.form-control:focus {
    Home About
    ========================================================================== */
 
-.home-about{
+.home-about {
     padding: 5em 0;
     background: url("../images/home-about-bg.svg") center -9em no-repeat;
     background-size: 80%;
 }
 
-.home-about h2{
+.home-about h2 {
     margin-bottom: 2em;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -155,7 +155,7 @@ input:focus, input.form-control:focus {
     color: #212327;
 }
 
-.home-about .text{
+.home-about .text {
     margin: 0 0 5em 0;
     padding: 0 0 0 0.5em;
     width: 60%;
@@ -165,7 +165,7 @@ input:focus, input.form-control:focus {
     color: #212327;
 }
 
-.home-about h3{
+.home-about h3 {
     margin-bottom: 1em;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -179,7 +179,7 @@ input:focus, input.form-control:focus {
    Home Founded
    ========================================================================== */
 
-.home-founded{
+.home-founded {
     margin: 0 0 5em 0;
     background: url("../images/home-founded-bg.svg") right center no-repeat;
     background-size: contain;
@@ -195,13 +195,107 @@ input:focus, input.form-control:focus {
     color: #212327;
 }
 
-.home-founded .text{
+.home-founded .text {
     margin: 0 0 3em 0;
     font-style: normal;
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 2.4375rem;
     color: #212327;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer .footer-inside {
+    padding-top: 5em;
+    padding-bottom: 1em;
+    background: url("../images/footer-bg.png") center center no-repeat;
+    background-size: cover;
+}
+
+.socials a {
+    display: inline-block;
+    margin: 0 1em 0 0;
+    width: 24px;
+    height: 24px;
+    text-indent: -9999px;
+}
+
+.twitter {
+    background: url("../images/twitter.svg") center center no-repeat;
+}
+
+.github {
+    background: url("../images/github.svg") center center no-repeat;
+}
+
+.discord {
+    background: url("../images/discord.svg") center center no-repeat;
+}
+
+.linkedin {
+    background: url("../images/linkedin.svg") center center no-repeat;
+}
+
+.footer .menu ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer .menu ul li {
+    display: inline-block;
+}
+
+.footer .menu ul li a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    color: #212327;
+}
+
+.footer .menu ul li a:hover {
+    color: #FF0420;
+}
+
+.footer-third {
+    text-align: right;
+    line-height: 32px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    leading-trim: both;
+    text-edge: cap;
+    color: #212327;
+}
+
+.footer-third a {
+    line-height: 32px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #212327;
+}
+
+.footer-third a:hover {
+    color: #FF0420;
+}
+
+.footer .gm {
+    display: inline-block;
+    background: url("../images/GM-logo.svg") center center no-repeat;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    text-align: left;
+}
+
+.footer .gm:hover {
+    transform: scale(1.1);
 }
 
 /* ==========================================================================
@@ -323,30 +417,47 @@ input:focus, input.form-control:focus {
         background-image: url("../images/star-bg-mobile.svg");
     }
 
-    .header-bottom .intro-image{
+    .header-bottom .intro-image {
         text-align: center;
     }
 
-    .home-about{
+    .home-about {
         padding: 5em 0;
         background: url("../images/home-about-bg.svg") center center no-repeat;
         background-size: cover;
     }
 
-    .home-founded{
+    .home-founded {
         background-size: 50%;
+    }
+
+    .home-founded h2 {
+        font-size: 3.5rem;
+        line-height: 3.6875rem;
+    }
+
+    .footer-first {
+        margin-bottom: 3em;
+    }
+
+    .footer-second {
+        margin-bottom: 3em;
+    }
+
+    .footer-third {
+        text-align: left;
     }
 
 }
 
 @media (max-width: 480px) {
 
-    .header-bottom h1{
+    .header-bottom h1 {
         font-size: 3em;
         line-height: 1.1;
     }
 
-    .header-bottom .intro-image img{
+    .header-bottom .intro-image img {
         display: block;
         width: 100%;
     }
