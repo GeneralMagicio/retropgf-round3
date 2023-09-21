@@ -55,15 +55,21 @@ $introData = getSpecificPostDataByCategory('post', 6);
                 <div class="row g-5">
                     <div class="col-12 col-md-4">
                         <h3><?php _e('Round 1', 'retro'); ?></h3>
-                        <?php echo $round_1_text; ?>
+                        <p>
+                            <?php echo $round_1_text; ?>
+                        </p>
                     </div>
                     <div class="col-12 col-md-4">
                         <h3><?php _e('Round 2', 'retro'); ?></h3>
-                        <?php echo $round_2_text; ?>
+                        <p>
+                            <?php echo $round_2_text; ?>
+                        </p>
                     </div>
                     <div class="col-12 col-md-4">
                         <h3><?php _e('Round 3', 'retro'); ?></h3>
-                        <?php echo $round_3_text; ?>
+                        <p>
+                            <?php echo $round_3_text; ?>
+                        </p>
                     </div>
                 </div>
             <?php endwhile; ?>
