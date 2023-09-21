@@ -21,7 +21,7 @@
             <div class="category-list-inside">
 
                 <!-- start:row -->
-                <div class="row g-4">
+                <div class="row g-4 justify-content-center">
 
                     <?php if (have_posts()) : ?>
 
@@ -42,49 +42,34 @@
 
                             ?>
 
-                            <?php if ($queryCounter == 1): ?>
-                                <div class="col-12">
-                                    <div class="inside">
-                                        <div class="row">
-                                            <?php if (isset($image[0])): ?>
-                                                <div class="col-12 col-md-6">
-                                                    <a href="<?php echo $permalink; ?>" class="image-holder">
-                                                        <img src="<?php echo $image[0]; ?>"
-                                                             alt="<?php echo $imageAlt; ?>"
-                                                             class="img-responsive">
-                                                        <time><?php echo get_the_date("d.m.Y."); ?></time>
-                                                    </a>
-                                                </div>
-                                            <?php endif; ?>
+                            <div class="col-12 col-md-8">
+                                <div class="inside">
+                                    <div class="row">
+                                        <?php if (isset($image[0])): ?>
                                             <div class="col-12 col-md-6">
-                                                <div class="category-item-right">
-                                                    <div class="text">
-                                                        <h2>
-                                                            <a href="<?php echo $permalink; ?>"><?php the_title(); ?></a>
-                                                        </h2>
-                                                        <?php the_excerpt(); ?>
-                                                    </div>
-                                                    <div>
-                                                        <a href="<?php echo $permalink; ?>" class="more">+ Više
-                                                            informacija</a>
-                                                    </div>
+                                                <a href="<?php echo $permalink; ?>" class="image-holder">
+                                                    <img src="<?php echo $image[0]; ?>"
+                                                         alt="<?php echo $imageAlt; ?>"
+                                                         class="img-responsive">
+                                                </a>
+                                            </div>
+                                        <?php endif; ?>
+                                        <div class="col-12 col-md-6">
+                                            <div class="category-item-right">
+                                                <div class="text">
+                                                    <h2>
+                                                        <a href="<?php echo $permalink; ?>"><?php the_title(); ?></a>
+                                                    </h2>
+                                                    <?php the_excerpt(); ?>
+                                                </div>
+                                                <div>
+                                                    <a href="<?php echo $permalink; ?>" class="more">+ find out more</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
-                            <?php else: ?>
-
-                                <div class="col-12 col-md-4">
-                                    <div class="text-other">
-                                        <time><?php echo get_the_date("d.m.Y."); ?></time>
-                                        <h3><a href="<?php echo $permalink; ?>"><?php the_title(); ?></a></h3>
-                                        <a href="<?php echo $permalink; ?>" class="more">+ Više informacija</a>
-                                    </div>
-                                </div>
-
-                            <?php endif; ?>
+                            </div>
 
                             <?php $queryCounter++; ?>
 

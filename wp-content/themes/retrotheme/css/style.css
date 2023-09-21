@@ -299,6 +299,38 @@ input:focus, input.form-control:focus {
 }
 
 /* ==========================================================================
+   Content
+   ========================================================================== */
+
+.intro-title h1{
+    margin: 0.5em 0 1.25em 0;
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 4.5rem;
+    line-height: 5.6875rem;
+    color: #212327;
+}
+
+.category-list h2 a{
+    display: block;
+    margin-bottom: 1em;
+    color: #212327;
+}
+
+.category-list h2 a:hover{
+    color: #FF0420;
+}
+
+.category-list .more{
+    color: #212327;
+}
+
+.category-list .more:hover{
+    color: #FF0420;
+}
+
+/* ==========================================================================
    Media query
    ========================================================================== */
 

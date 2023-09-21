@@ -4,29 +4,49 @@
     <!-- start:container -->
     <div class="container">
 
-        <?php if (have_posts()) : ?>
+        <!-- start:intro-title -->
+        <div class="intro-title">
+            <!-- start:container -->
+            <div class="container">
+                <h1><?php the_title(); ?></h1>
+            </div>
+            <!-- end:container -->
+        </div>
+        <!-- end:intro-title -->
 
-            <?php while (have_posts()) : the_post(); ?>
+        <!-- start:row -->
+        <div class="row g-4 justify-content-center">
 
-                <?php
+            <div class="col-12 col-md-8">
 
-                //prepare data
-                $postID = get_the_ID();
+                <?php if (have_posts()) : ?>
 
-                $thumbID = get_post_thumbnail_id();
-                $image = wp_get_attachment_image_src($thumbID, 'full');
-                $imageAlt = get_post_meta($thumbID, '_wp_attachment_image_alt', true);
-                ?>
+                    <?php while (have_posts()) : the_post(); ?>
 
-                <!-- start:text -->
-                <div class="text">
-                    <?php the_content(); ?>
-                </div>
-                <!-- end:text -->
+                        <?php
 
-            <?php endwhile; ?>
+                        //prepare data
+                        $postID = get_the_ID();
 
-        <?php endif; ?>
+                        $thumbID = get_post_thumbnail_id();
+                        $image = wp_get_attachment_image_src($thumbID, 'full');
+                        $imageAlt = get_post_meta($thumbID, '_wp_attachment_image_alt', true);
+                        ?>
+
+                        <!-- start:text -->
+                        <div class="text">
+                            <?php the_content(); ?>
+                        </div>
+                        <!-- end:text -->
+
+                    <?php endwhile; ?>
+
+                <?php endif; ?>
+
+            </div>
+
+        </div>
+        <!-- end:row -->
 
     </div>
     <!-- end:container -->
