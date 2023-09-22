@@ -8,8 +8,8 @@ $desc       =   category_description( $catID );
 
 ?>
 
-<?php if( $catID == 12 ): ?>
-    <?php include 'templates/category-course/category-course.php'; ?>
+<?php if( $catID == 8 ): ?>
+    <?php include 'templates/category/category-projects.php'; ?>
 <?php else: ?>
     <?php include 'templates/category/category-main.php'; ?>
 <?php endif; ?>

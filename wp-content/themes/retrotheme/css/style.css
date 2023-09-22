@@ -65,6 +65,7 @@ input:focus, input.form-control:focus {
     position: relative;
     background-color: #FF0420;
     overflow: hidden;
+    z-index: 4;
 }
 
 .header-over .star {
@@ -76,10 +77,13 @@ input:focus, input.form-control:focus {
     background-image: url("../images/star-bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 5;
 }
 
 .header {
     padding: 2em 0 0 0;
+    position: relative;
+    z-index: 6;
 }
 
 .header .logo {
@@ -205,6 +209,119 @@ input:focus, input.form-control:focus {
 }
 
 /* ==========================================================================
+   Home Projects
+   ========================================================================== */
+
+.project-list .project-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1.5em;
+    border-radius: 30px;
+    box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.15);
+}
+
+.project-list .project-link span {
+    display: block;
+}
+
+.project-list .project-link span.image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1.5em;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.project-list .project-link span.title {
+    margin-bottom: 1em;
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #212327;
+}
+
+.project-list .project-link .text {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #212327;
+}
+
+.project-list .project-link:hover .title {
+    color: #FF0420 !important;
+}
+
+/* Category Projects */
+.category-projects .nav {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 3em 0;
+}
+
+.category-projects .nav li {
+    display: inline-block;
+    width: auto;
+    margin: 0 0.5em;
+}
+
+.category-projects .nav li a {
+    padding: 0.75em 1.5em;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.1;
+    color: #212327;
+    background: none;
+    border-color: #817f7f;
+    border-radius: 10px;
+}
+
+.category-projects .nav li a[aria-expanded="true"],
+.category-projects .nav li a:hover {
+    color: #FF0420;
+    border-color: #FF0420;
+}
+
+/* Single */
+.project-intro{
+    margin: 0 0 5em 0;
+}
+
+.project-intro .img-holder {
+    display: inline-block;
+    border: 1px solid #817f7f;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 3em 0 0;
+    box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.15);
+}
+
+.project-intro img {
+    display: inline-block;
+    width: 180px;
+    border-radius: 10px;
+}
+
+.project-intro .value h3 {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: #212327;
+}
+
+.project-intro .value h3 {
+    width: auto;
+    display: inline-block;
+    font-size: 1.5rem;
+    line-height: 1.75;
+    color: #FF0420;
+}
+
+/* ==========================================================================
    Footer
    ========================================================================== */
 
@@ -302,7 +419,8 @@ input:focus, input.form-control:focus {
    Content
    ========================================================================== */
 
-.intro-title h1{
+.intro-title h1,
+.intro-title h1 a {
     margin: 0.5em 0 1.25em 0;
     font-family: 'Rubik', sans-serif;
     font-style: italic;
@@ -312,21 +430,21 @@ input:focus, input.form-control:focus {
     color: #212327;
 }
 
-.category-list h2 a{
+.category-list h2 a {
     display: block;
     margin-bottom: 1em;
     color: #212327;
 }
 
-.category-list h2 a:hover{
+.category-list h2 a:hover {
     color: #FF0420;
 }
 
-.category-list .more{
+.category-list .more {
     color: #212327;
 }
 
-.category-list .more:hover{
+.category-list .more:hover {
     color: #FF0420;
 }
 
@@ -480,6 +598,32 @@ input:focus, input.form-control:focus {
         text-align: left;
     }
 
+    .category-projects .nav li {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .category-projects .nav li a{
+        display: block;
+    }
+    .intro-title h1, .intro-title h1 a {
+        margin: 0.5em 0 1.25em 0;
+        font-family: 'Rubik', sans-serif;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        color: #212327;
+    }
+
+    .project-intro .img-holder{
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+    .project-intro img{
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
