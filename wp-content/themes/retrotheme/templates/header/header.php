@@ -11,16 +11,14 @@
             <!-- start:row -->
             <div class="row align-items-center">
 
-                <div class="col-5 col-xl-3 order-0">
-                    <a href="<?php echo WPML_HOME_URL; ?>" title="<?php bloginfo('name'); ?>" class="logo">
-                        <img src="<?php echo TEMPLATEDIR; ?>/images/logo.svg" alt="<?php bloginfo('name'); ?>">
-                    </a>
-                </div>
+                <div class="col-12 col-xl-3 order-0 flex">
 
-                <div class="col-5 col-xl-auto ms-auto">
-                    <nav class="navbar navbar-expand-xl">
+                    <div class="d-flex flex-row flex-wrap justify-content-between align-items-center">
+                        <a href="<?php echo WPML_HOME_URL; ?>" title="<?php bloginfo('name'); ?>" class="logo">
+                            <img src="<?php echo TEMPLATEDIR; ?>/images/logo.svg" alt="<?php bloginfo('name'); ?>">
+                        </a>
 
-                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        <button class="navbar-toggler collapsed d-inline-block d-xl-none" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false"
                                 aria-label="Toggle navigation">
                             <svg viewBox="0 0 100 80" width="20" height="20">
@@ -29,8 +27,14 @@
                                 <rect y="60" width="100" height="10"></rect>
                             </svg>
                         </button>
+                    </div>
 
-                        <div class="navbar-collapse collapse" aria-expanded="false">
+                </div>
+
+                <div class="col-12 col-xl-auto ms-auto">
+                    <nav class="navbar navbar-expand-xl">
+
+                        <div id="navbarDefault" class="navbar-collapse collapse" aria-expanded="false">
 
                             <?php
                             $headerMenuArguments = array(
@@ -67,11 +71,11 @@
         <!-- end:container -->
     </header>
 
-    <?php if( is_front_page() ): ?>
+    <?php if (is_front_page()): ?>
 
         <?php $introData = getSpecificPostDataByCategory('post', 4) ?>
 
-        <?php if( $introData ): ?>
+        <?php if ($introData): ?>
 
             <!-- start:header-bottom -->
             <div class="header-bottom">
@@ -87,7 +91,7 @@
                                 <?php echo $introData['post_content']; ?>
                             </div>
                         </div>
-                        
+
                         <div class="col-12 col-md-6 intro-image">
                             <img src="<?php echo TEMPLATEDIR; ?>/images/intro-image.svg" alt="Intro Image">
                         </div>
@@ -109,7 +113,6 @@
 
 <!-- start:header -->
 <header class="header position-relative">
-
 
 
 </header>
