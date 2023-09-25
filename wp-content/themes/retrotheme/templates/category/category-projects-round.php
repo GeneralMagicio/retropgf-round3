@@ -23,12 +23,9 @@
                 <?php
                 // List subcategories
                 $subcategories = get_categories(array(
-                    'child_of' => $catID,
-                    'hide_empty' => 0,
+                    'child_of' => 8,
+                    'hide_empty' => true,
                 ));
-
-                //project-list
-
                 ?>
 
                 <?php if (!empty($subcategories)): ?>
@@ -68,11 +65,17 @@
                         $queryArgsProject = array(
                             'post_type' => 'post',
                             'tax_query' => array(
+                                'relation' => 'AND',
                                 array(
                                     'taxonomy' => 'category',
                                     'field' => 'term_id',
                                     'terms' => $subcatID,
-                                )
+                                ),
+                                array(
+                                    'taxonomy' => 'category',
+                                    'field' => 'term_id',
+                                    'terms' => $catID,
+                                ),
                             ),
                             'orderby' => 'date',
                             'order' => 'DESC',
