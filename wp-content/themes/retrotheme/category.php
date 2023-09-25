@@ -10,6 +10,8 @@ $desc       =   category_description( $catID );
 
 <?php if( $catID == 8 ): ?>
     <?php include 'templates/category/category-projects.php'; ?>
+<?php elseif( $catID == 13 || $catID == 14 ): ?>
+    <?php include 'templates/category/category-projects-round.php'; ?>
 <?php else: ?>
     <?php include 'templates/category/category-main.php'; ?>
 <?php endif; ?>

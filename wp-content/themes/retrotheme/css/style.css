@@ -64,6 +64,9 @@ input:focus, input.form-control:focus {
 .header-over {
     position: relative;
     background-color: #FF0420;
+}
+
+.home .header-over {
     overflow: hidden;
     z-index: 4;
 }
@@ -77,12 +80,18 @@ input:focus, input.form-control:focus {
     background-image: url("../images/star-bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.home .header-over .star{
     z-index: 5;
 }
 
 .header {
     padding: 2em 0 0 0;
     position: relative;
+}
+
+.home .header {
     z-index: 6;
 }
 
@@ -114,6 +123,43 @@ input:focus, input.form-control:focus {
 .header .navbar-nav .active .nav-link,
 .header .navbar-nav .nav-link:hover,
 .header .navbar-nav .nav-link:focus {
+    text-shadow: 0 0 0.25em #000000;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.header .navbar-nav .dropdown-menu {
+    background: #FF0420;
+    border: none;
+    z-index: 400;
+    padding: 1em;
+    margin: -2px 0 0 0;
+    overflow: hidden;
+}
+
+.header .navbar-nav .dropdown-menu li{
+    padding: 0;
+}
+
+.header .navbar-nav .dropdown-menu a {
+    padding: 0.25em 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffffff;
+    transition: all 0.75s ease-in-out;
+}
+
+.header .navbar-nav .dropdown-menu .dropdown-item.active,
+.header .navbar-nav .dropdown-menu a:hover {
+    background: none;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffffff;
     text-shadow: 0 0 0.25em #000000;
 }
 
@@ -288,7 +334,7 @@ input:focus, input.form-control:focus {
 }
 
 /* Single */
-.project-intro{
+.project-intro {
     margin: 0 0 5em 0;
 }
 
@@ -603,9 +649,10 @@ input:focus, input.form-control:focus {
         margin-bottom: 1em;
     }
 
-    .category-projects .nav li a{
+    .category-projects .nav li a {
         display: block;
     }
+
     .intro-title h1, .intro-title h1 a {
         margin: 0.5em 0 1.25em 0;
         font-family: 'Rubik', sans-serif;
@@ -616,12 +663,12 @@ input:focus, input.form-control:focus {
         color: #212327;
     }
 
-    .project-intro .img-holder{
+    .project-intro .img-holder {
         margin-right: 0;
         margin-bottom: 1em;
     }
 
-    .project-intro img{
+    .project-intro img {
         width: 100%;
     }
 }

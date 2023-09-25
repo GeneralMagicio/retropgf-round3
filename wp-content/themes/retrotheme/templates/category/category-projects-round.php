@@ -5,7 +5,7 @@
     <div class="intro-title">
         <!-- start:container -->
         <div class="container">
-            <h1><?php echo $title; ?></h1>
+            <h1>Projects: <?php echo $title; ?></h1>
         </div>
         <!-- end:container -->
     </div>
@@ -23,7 +23,7 @@
                 <?php
                 // List subcategories
                 $subcategories = get_categories(array(
-                    'child_of' => 8,
+                    'child_of' => $catID,
                     'hide_empty' => 0,
                 ));
 
@@ -59,7 +59,6 @@
                 <?php $counter = 1; ?>
                 <?php foreach ($subcategories as $subcategory): ?>
                     <?php $subcatID = $subcategory->term_id; ?>
-
                     <div
                             class="collapse multi-collapse <?php echo ($counter == 1) ? 'show' : ''; ?>"
                             id="tag<?php echo $subcatID; ?>"
@@ -69,16 +68,10 @@
                         $queryArgsProject = array(
                             'post_type' => 'post',
                             'tax_query' => array(
-                                'relation' => 'AND',
                                 array(
                                     'taxonomy' => 'category',
                                     'field' => 'term_id',
                                     'terms' => $subcatID,
-                                ),
-                                array(
-                                    'taxonomy' => 'category',
-                                    'field' => 'term_id',
-                                    'terms' => $catID,
                                 )
                             ),
                             'orderby' => 'date',
