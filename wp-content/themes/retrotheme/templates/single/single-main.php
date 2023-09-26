@@ -6,18 +6,14 @@
 
         <!-- start:intro-title -->
         <div class="intro-title">
-            <!-- start:container -->
-            <div class="container">
-                <?php if (has_category(8)): ?>
-                    <h1>
-                        <a href="<?php echo get_category_link(8); ?>">Projects</a> =>
-                        <?php the_title(); ?>
-                    </h1>
-                <?php else: ?>
-                    <h1><?php the_title(); ?></h1>
-                <?php endif; ?>
-            </div>
-            <!-- end:container -->
+            <?php if (has_category(8)): ?>
+                <h1>
+                    <a href="<?php echo get_category_link(8); ?>">Projects</a> =>
+                    <?php the_title(); ?>
+                </h1>
+            <?php else: ?>
+                <h1><?php the_title(); ?></h1>
+            <?php endif; ?>
         </div>
         <!-- end:intro-title -->
 

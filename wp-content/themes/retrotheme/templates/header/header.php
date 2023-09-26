@@ -110,10 +110,3 @@
 
 </div>
 <!-- end:header-over -->
-
-<!-- start:header -->
-<header class="header position-relative">
-
-
-</header>
-<!-- end:header -->
