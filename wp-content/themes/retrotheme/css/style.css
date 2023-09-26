@@ -266,14 +266,30 @@ input:focus, input.form-control:focus {
     box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.15);
 }
 
+
 .project-list .project-link span {
     display: block;
+}
+
+.project-list .project-link .project-link-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em;
+    font-size: 0.875rem;
+}
+
+.project-list .project-link .project-link-top h3 {
+    display: flex;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #212327;
 }
 
 .project-list .project-link span.image {
     width: 100px;
     height: 100px;
-    margin-bottom: 1.5em;
     background-position: center center;
     background-size: cover;
     border-radius: 10px;

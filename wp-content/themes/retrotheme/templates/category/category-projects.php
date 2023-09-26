@@ -99,7 +99,7 @@
                                     ?>
 
                                     <div class="col-12 col-sm-6 col-xl-3 mb-4 mb-md-0">
-                                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"
+                                        <div href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"
                                            class="project-link">
                                             <span class="project-link-top">
                                                 <?php if (isset($image[0])): ?>
@@ -110,7 +110,7 @@
                                                             <span class="text">
                                                 <?php echo $project_short_description; ?>
                                             </span>
-                                        </a>
+                                        </div>
                                     </div>
 
                                 <?php endwhile; ?>

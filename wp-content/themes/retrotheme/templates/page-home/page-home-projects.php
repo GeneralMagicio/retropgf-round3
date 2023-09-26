@@ -47,7 +47,7 @@ $query = new WP_Query($queryArgs);
                     ?>
 
                     <div class="col-12 col-sm-6 col-md-3 mb-4 mb-md-0">
-                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="project-link">
+                        <a href="<?php echo get_category_link(8); ?>" title="<?php the_title(); ?>" class="project-link">
                             <span class="project-link-top">
                                 <?php if( isset($image[0]) ): ?>
                                     <span class="image" style="background-image: url(<?php echo $image[0]; ?>);"></span>
