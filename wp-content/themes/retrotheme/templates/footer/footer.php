@@ -44,8 +44,7 @@
                         Magically crafted by <a href="https://generalmagic.io" target="_blank" title="General Magic"
                                                 class="gm">General
                             Magic</a><br>
-                        Copyright 2023. <a href="https://www.optimism.io/" target="_blank" title="Optimism">Optimism
-                            Attestation</a>
+                        Copyright 2023. <a href="https://www.optimism.io/" target="_blank" title="Optimism Foundation">Optimism Foundation</a>
                     </div>
                 </div>
 
