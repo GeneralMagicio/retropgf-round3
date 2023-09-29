@@ -82,7 +82,7 @@ input:focus, input.form-control:focus {
     background-size: cover;
 }
 
-.home .header-over .star{
+.home .header-over .star {
     z-index: 5;
 }
 
@@ -139,7 +139,7 @@ input:focus, input.form-control:focus {
     overflow: hidden;
 }
 
-.header .navbar-nav .dropdown-menu li{
+.header .navbar-nav .dropdown-menu li {
     padding: 0;
 }
 
@@ -212,6 +212,12 @@ input:focus, input.form-control:focus {
     font-weight: 400;
     line-height: 2.43rem;
     color: #212327;
+}
+
+.home-about .round {
+    padding: 2em;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
 }
 
 .home-about h3 {
@@ -602,7 +608,7 @@ input:focus, input.form-control:focus {
         margin-bottom: 2em;
     }
 
-    .header .navbar-nav{
+    .header .navbar-nav {
         padding-top: 2em;
         padding-bottom: 2em;
         border-top: 1px solid #ffffff;
