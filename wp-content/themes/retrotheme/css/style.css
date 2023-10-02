@@ -215,6 +215,7 @@ input:focus, input.form-control:focus {
 }
 
 .home-about .round {
+    height: 100%;
     padding: 2em;
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.06);
     border-radius: 8px;
@@ -228,6 +229,21 @@ input:focus, input.form-control:focus {
     font-size: 2rem;
     line-height: 1.1;
     color: #212327;
+}
+
+.home-about .btn-red {
+    display: inline-block;
+    padding: 0.75em 1em;
+    font-style: normal;
+    font-size: 1.125rem;
+    line-height: 1.1;
+    background-color: #FF0420;
+    width: auto;
+    color: #FFFFFF;
+}
+
+.home-about .btn-red:hover {
+    opacity: 0.7;
 }
 
 /* ==========================================================================

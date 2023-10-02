@@ -44,6 +44,7 @@ $introData = getSpecificPostDataByCategory('post', 6);
                 $round_1_text = get_field('round_1_text', $postID);
                 $round_2_text = get_field('round_2_text', $postID);
                 $round_3_text = get_field('round_3_text', $postID);
+                $round_3_link = get_field('round_3_link', $postID);
                 ?>
 
                 <h2><?php echo get_the_title(); ?></h2>
@@ -75,6 +76,9 @@ $introData = getSpecificPostDataByCategory('post', 6);
                             <p>
                                 <?php echo $round_3_text; ?>
                             </p>
+                            <?php if( isset($round_3_link['url']) ): ?>
+                                <a href="<?php echo $round_3_link['url']; ?>" target="<?php echo $round_3_link['target']; ?>" class="btn btn-red"><?php echo $round_3_link['title']; ?></a>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
