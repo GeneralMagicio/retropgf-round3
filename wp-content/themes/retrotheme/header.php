@@ -22,14 +22,14 @@
     <title><?php wp_title(''); ?></title>
 
     <!-- start:stylesheets -->
-    <link rel="stylesheet" href="<?php echo TEMPLATEDIR; ?>/style.css?ver=1.5">
+    <link rel="stylesheet" href="<?php echo TEMPLATEDIR; ?>/style.css?ver=1.7">
     <!-- end:stylesheets -->
 
     <?php wp_head(); ?>
 
     <!-- start:scripts -->
     <script src="<?php echo TEMPLATEDIR; ?>/js/bootstrap.bundle.min.js"></script>
-    <script src="<?php echo TEMPLATEDIR; ?>/js/require.js?ver=1.04"></script>
+    <script src="<?php echo TEMPLATEDIR; ?>/js/require.js?ver=1.06"></script>
     <!-- end:scripts -->
 
 </head>

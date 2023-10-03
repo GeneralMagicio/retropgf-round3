@@ -3,6 +3,14 @@ jQuery(document).ready(function () {
     // Set up menu
     setUpMenu();
 
+    jQuery('#back-to-top').click(function () {
+        jQuery('body,html').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
+
+
 });
 
 

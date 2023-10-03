@@ -102,11 +102,14 @@
 
                                     $project_short_description = get_field('project_short_description', $postID);
                                     $value_awarded = get_field('value_awarded', $postID);
+                                    $link = get_field('link', $postID);
+                                    $linkToProject = ( isset($link) )? esc_url($link) : '';
+                                    $tagHtml = ( isset($link) )? 'a' : 'div';
                                     ?>
 
                                     <div class="col-12 col-sm-6 col-xl-3 mb-4 mb-md-0">
-                                        <div href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"
-                                             class="project-link">
+                                        <<?php echo $tagHtml; ?> href="<?php echo $linkToProject; ?>" title="<?php the_title(); ?>"
+                                        class="project-link" target="_blank">
                                             <span class="project-link-top">
                                                 <?php if (isset($image[0])): ?>
                                                     <span class="image"
@@ -120,7 +123,7 @@
                                             <span class="text">
                                                 <?php echo $project_short_description; ?>
                                             </span>
-                                        </div>
+                                        </<?php echo $tagHtml; ?>>
                                     </div>
 
                                 <?php endwhile; ?>
@@ -137,6 +140,10 @@
 
             </div>
             <!-- end:category-list-inside -->
+
+            <div class="back-holder">
+                <button id="back-to-top"><?php _e('Back to top'); ?></button>
+            </div>
 
         </div>
         <!-- end:container -->

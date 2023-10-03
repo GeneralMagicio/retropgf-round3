@@ -231,9 +231,41 @@ input:focus, input.form-control:focus {
     color: #212327;
 }
 
+.home-about .round .date {
+    margin-top: 2em;
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    color: #212327;
+}
+
+.home-about .round.item-3 .date {
+    margin-bottom: 2em;
+}
+
+.home-about .round .link {
+    margin-top: 1em;
+}
+
+.home-about .round .link a {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    color: #FF0420;
+}
+
+.home-about .round .link a:hover {
+    color: #212327;
+}
+
 .home-about .btn-red {
     display: inline-block;
     padding: 0.75em 1em;
+    border-radius: 16px;
     font-style: normal;
     font-size: 1.125rem;
     line-height: 1.1;
@@ -334,7 +366,7 @@ input:focus, input.form-control:focus {
     color: #212327;
 }
 
-.project-list .project-link:hover .title {
+.project-list a.project-link:hover .title {
     color: #FF0420 !important;
 }
 
@@ -370,6 +402,29 @@ input:focus, input.form-control:focus {
     background: none;
     color: #FF0420;
     border-color: #FF0420;
+}
+
+.back-holder {
+    margin-top: 2em;
+    text-align: right;
+}
+
+.back-holder button {
+    display: inline-block;
+    padding: 0.75em 1em;
+    border-radius: 16px;
+    font-style: normal;
+    font-size: 1.125rem;
+    line-height: 1.1;
+    background-color: #FF0420;
+    width: auto;
+    color: #FFFFFF;
+    box-shadow: none;
+    border: none;
+}
+
+.back-holder button:hover {
+    opacity: 0.7;
 }
 
 /* Single */
@@ -743,6 +798,44 @@ input:focus, input.form-control:focus {
 }
 
 @media (max-width: 425px) {
+
+    .header-bottom .text {
+        padding-right: 0;
+        font-size: 1.75rem;
+    }
+
+    .home-about .text {
+        width: 100%;
+        font-size: 1.75rem;
+    }
+
+    .round p {
+        font-size: 1.125rem;
+    }
+
+    .home-about .round .link a {
+        font-size: 1.125rem;
+    }
+
+    .home-about .btn-red {
+        width: 100%;
+    }
+
+    .project-list .project-link .text {
+        font-size: 1.4rem;
+    }
+
+    .back-holder button {
+        width: 100%;
+    }
+
+    .category-list-inside img {
+        margin-bottom: 2em;
+    }
+
+    .single .content-region .text p {
+        font-size: 1.125rem;
+    }
 
 }
 
