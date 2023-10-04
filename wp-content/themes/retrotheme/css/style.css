@@ -462,6 +462,47 @@ input:focus, input.form-control:focus {
 }
 
 /* ==========================================================================
+   Home Footer
+   ========================================================================== */
+
+.home-footer {
+    margin: 5em 0 0 0;
+}
+
+.home-footer-inner {
+    padding: 7em 5em;
+    background: #FF0420 url("../images/home-footer-bg.svg") center center no-repeat;
+    background-size: cover;
+    border-radius: 30px
+}
+
+.home-footer-inner h2 {
+    margin: 0 0 1em 0;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 4.5rem;
+    line-height: 5.6875rem;
+    color: #FFFFFF;
+}
+
+.home-footer-inner .link a{
+    display: inline-block;
+    padding: 0.75em 3em;
+    border-radius: 16px;
+    font-style: normal;
+    font-size: 1.125rem;
+    line-height: 1.1;
+    background-color: #FFFFFF;
+    width: auto;
+    color: #212327;
+}
+
+
+.home-footer-inner .link a:hover {
+    opacity: 0.7;
+}
+
+/* ==========================================================================
    Footer
    ========================================================================== */
 
@@ -714,6 +755,8 @@ input:focus, input.form-control:focus {
         top: 4%;
         left: -73%;
     }
+
+
 }
 
 @media (max-width: 600px) {
@@ -740,6 +783,19 @@ input:focus, input.form-control:focus {
     .home-founded h2 {
         font-size: 3.5rem;
         line-height: 3.6875rem;
+    }
+
+    .home-footer-inner{
+        padding: 7em 1em;
+    }
+
+    .home-footer-inner h2{
+        font-size: 2.5em;
+        line-height: 1.1;
+    }
+
+    .home-footer-inner .link a{
+        width: 100%;
     }
 
     .footer-first {

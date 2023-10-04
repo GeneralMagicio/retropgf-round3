@@ -22,7 +22,7 @@
     <title><?php wp_title(''); ?></title>
 
     <!-- start:stylesheets -->
-    <link rel="stylesheet" href="<?php echo TEMPLATEDIR; ?>/style.css?ver=1.7">
+    <link rel="stylesheet" href="<?php echo TEMPLATEDIR; ?>/style.css?ver=1.8">
     <!-- end:stylesheets -->
 
     <?php wp_head(); ?>
