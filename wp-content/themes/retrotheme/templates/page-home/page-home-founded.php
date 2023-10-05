@@ -40,6 +40,8 @@ $introData = getSpecificPostDataByCategory('post', 6);
                 $thumbID = get_post_thumbnail_id();
                 $image = wp_get_attachment_image_src($thumbID, 'theme-thumb-1');
                 $imageAlt = get_post_meta($thumbID, '_wp_attachment_image_alt', true);
+
+                $link = get_field('link', $postID);
                 ?>
 
                 <!-- start:row -->
@@ -52,6 +54,12 @@ $introData = getSpecificPostDataByCategory('post', 6);
                         <div class="text">
                             <?php the_content(); ?>
                         </div>
+
+                        <?php if (isset($link['url'])): ?>
+                            <div class="link">
+                                <a href="<?php echo $link['url']; ?>" target="<?php echo $link['target'] ?>" class="btn"><?php echo $link['title']; ?></a>
+                            </div>
+                        <?php endif; ?>
 
                     </div>
 
