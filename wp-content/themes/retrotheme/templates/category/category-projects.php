@@ -49,7 +49,17 @@
                             </li>
                             <?php $counter++; ?>
                         <?php endforeach; ?>
-
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select Round
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="<?php echo get_category_link(13) ?>">Round 1</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo get_category_link(14) ?>">Round 2</a></li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 <?php endif; ?>
 

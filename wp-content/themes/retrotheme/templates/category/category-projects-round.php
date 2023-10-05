@@ -49,7 +49,22 @@
                             </li>
                             <?php $counter++; ?>
                         <?php endforeach; ?>
-
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select Round
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="<?php echo get_category_link(12) ?>">All Rounds</a></li>
+                                    <?php if( $catID != 13 ): ?>
+                                        <li><a class="dropdown-item" href="<?php echo get_category_link(13) ?>">Round 1</a></li>
+                                    <?php endif; ?>
+                                    <?php if( $catID != 14 ): ?>
+                                        <li><a class="dropdown-item" href="<?php echo get_category_link(14) ?>">Round 2</a></li>
+                                    <?php endif; ?>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 <?php endif; ?>
 
