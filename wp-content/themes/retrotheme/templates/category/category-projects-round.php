@@ -17,6 +17,12 @@
         <!-- start:container -->
         <div class="container">
 
+            <?php $categoryData = get_category($catID); ?>
+
+            <div class="intro mb-5">
+                <?php echo $categoryData->description; ?>
+            </div>
+
             <!-- start:category-list-inside -->
             <div class="category-list-inside accordion project-list" id="tags">
 
