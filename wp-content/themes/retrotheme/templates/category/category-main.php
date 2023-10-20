@@ -17,7 +17,10 @@
         <!-- start:container -->
         <div class="container">
 
-            <?php $categoryData = get_category($catID);?>
+            <?php
+            $category_id = get_queried_object_id();
+            $categoryData = get_category($category_id);
+            ?>
 
             <div class="intro mb-5">
                 <?php echo $categoryData->description; ?>
