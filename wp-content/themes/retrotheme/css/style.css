@@ -487,9 +487,11 @@ input:focus, input.form-control:focus {
 }
 
 .home-footer-inner {
-    padding: 7em 5em;
-    background: #FF0420 url("../images/home-footer-bg.svg") center center no-repeat;
-    background-size: cover;
+    border-radius: 30px
+}
+
+.home-footer-inner img{
+    width: 100%;
     border-radius: 30px
 }
 

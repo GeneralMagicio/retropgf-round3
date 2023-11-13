@@ -11,6 +11,6 @@
 
     <?php get_template_part('templates/page-home/page-home-projects', 'intro'); ?>
 
-    <?php get_template_part('templates/page-home/page-home-footer', 'intro'); ?>
+    <?php get_template_part('templates/page-home/page-home-footer-image', 'intro'); ?>
 
 <?php get_footer(); ?>
