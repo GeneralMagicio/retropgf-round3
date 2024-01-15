@@ -40,7 +40,7 @@ $query = new WP_Query($queryArgs);
                         $postID = get_the_ID();
 
                         $thumbID = get_post_thumbnail_id();
-                        $image = wp_get_attachment_image_src($thumbID, 'theme-thumb-1');
+                        $image = wp_get_attachment_image_src($thumbID, 'full');
                         $imageAlt = get_post_meta($thumbID, '_wp_attachment_image_alt', true);
 
                         $link = get_field('link', $postID);
@@ -48,9 +48,9 @@ $query = new WP_Query($queryArgs);
 
                         <div class="col-12">
                             <?php if( isset($image[0]) ): ?>
-                                <div class="image-holder">
+                                <a href="<?php echo $link['url']; ?>" class="image-holder" target="_blank" title="<?php echo $link['title']; ?>">
                                     <img src="<?php echo $image[0]; ?>" alt="<?php echo $imageAlt; ?>">
-                                </div>
+                                </a>
                             <?php endif; ?>
                         </div>
 

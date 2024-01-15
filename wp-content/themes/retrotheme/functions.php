@@ -7,9 +7,6 @@ if (function_exists('current_user_can') && current_user_can('manage_options')) {
     ini_set('display_errors', 1);
 }
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 /* Main global variables */
 define('TEMPLATEDIR', get_template_directory_uri());
 
