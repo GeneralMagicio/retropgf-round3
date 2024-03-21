@@ -1,4 +1,13 @@
 <?php
+add_action('template_redirect','redirect_all_pages_to_home');
+
+function redirect_all_pages_to_home() {
+    if ( ! is_front_page() ) {
+        wp_redirect( get_home_url() );
+        exit;
+    }
+}
+
 /**
  * Theme functions
  */
