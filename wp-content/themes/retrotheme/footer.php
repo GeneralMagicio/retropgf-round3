@@ -1,5 +1,5 @@
 
-        <?php include 'templates/footer/footer.php'; ?>
+<!--        --><?php //include 'templates/footer/footer.php'; ?>
 
         <?php wp_footer(); ?>
 

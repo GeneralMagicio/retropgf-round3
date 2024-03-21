@@ -1,2 +1,75 @@
-
+@import url("fonts/stylesheet.css");
 @import url("bootstrap.min.css");
+
+/* ==========================================================================
+   Global
+   ========================================================================== */
+
+body {
+    font-family: 'PP Mori', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #212327;
+}
+
+.home-page {
+    background: url("../images/temp/home-bg.svg") center center no-repeat;
+    background-size: cover;
+    background-color: #5A30A1;
+}
+
+.home-page h1 {
+    font-size: 80px;
+    line-height: 90px;
+    font-weight: 800;
+    color: #FFD700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.home-page h1 span {
+    display: block;
+}
+
+.home-page h1 span span {
+    display: inline-block;
+    margin: 0 13px;
+    width: 60px;
+    height: 64px;
+    background: url("../images/temp/arrow-right.svg") center center no-repeat;
+    background-size: cover;
+}
+
+.home-page h1 span:nth-child(2) span {
+    background: url("../images/temp/arrow-left.svg") center center no-repeat;
+    background-size: cover;
+}
+
+.home-page .soon {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 58px;
+    text-align: center;
+    color: #FFD700;
+    letter-spacing: -0.02em;
+    leading-trim: both;
+    text-edge: cap;
+    text-align: center;
+}
+
+.home-page a {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.home-page a:hover {
+    text-decoration: underline;
+}
