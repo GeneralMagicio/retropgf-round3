@@ -73,3 +73,38 @@ body {
 .home-page a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 550px) {
+
+    .home-page h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .home-page h1 span span {
+        width: 30px;
+        height: 32px;
+    }
+
+    .home-page .soon{
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .home-page a{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 375px) {
+    .home-page h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .home-page h1 span span {
+        width: 27px;
+        height: 29px;
+    }
+}

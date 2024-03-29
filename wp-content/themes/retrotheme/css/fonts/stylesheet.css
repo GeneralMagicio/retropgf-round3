@@ -1,43 +1,10 @@
 @font-face {
     font-family: 'PP Mori';
-    src: url('PPMori-SemiBoldItalic.woff2') format('woff2'),
-        url('PPMori-SemiBoldItalic.woff') format('woff');
-    font-weight: 600;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'PP Mori';
-    src: url('PPMori-Regular.woff2') format('woff2'),
-        url('PPMori-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'PP Mori';
-    src: url('PPMori-RegularItalic.woff2') format('woff2'),
-        url('PPMori-RegularItalic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'PP Mori';
-    src: url('PPMori-Extralight.woff2') format('woff2'),
-        url('PPMori-Extralight.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'PP Mori';
-    src: url('PPMori-ExtralightItalic.woff2') format('woff2'),
-        url('PPMori-ExtralightItalic.woff') format('woff');
+    src: url('PPMori-ExtralightItalic.eot');
+    src: url('PPMori-ExtralightItalic.eot?#iefix') format('embedded-opentype'),
+    url('PPMori-ExtralightItalic.woff2') format('woff2'),
+    url('PPMori-ExtralightItalic.woff') format('woff'),
+    url('PPMori-ExtralightItalic.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
     font-display: swap;
@@ -45,10 +12,229 @@
 
 @font-face {
     font-family: 'PP Mori';
-    src: url('PPMori-SemiBold.woff2') format('woff2'),
-        url('PPMori-SemiBold.woff') format('woff');
+    src: url('PPMori-Extralight.eot');
+    src: url('PPMori-Extralight.eot?#iefix') format('embedded-opentype'),
+    url('PPMori-Extralight.woff2') format('woff2'),
+    url('PPMori-Extralight.woff') format('woff'),
+    url('PPMori-Extralight.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Mori Book';
+    src: url('PPMori-Book.eot');
+    src: url('PPMori-Book.eot?#iefix') format('embedded-opentype'),
+    url('PPMori-Book.woff2') format('woff2'),
+    url('PPMori-Book.woff') format('woff'),
+    url('PPMori-Book.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Mori';
+    src: url('PPMori-RegularItalic.eot');
+    src: url('PPMori-RegularItalic.eot?#iefix') format('embedded-opentype'),
+    url('PPMori-RegularItalic.woff2') format('woff2'),
+    url('PPMori-RegularItalic.woff') format('woff'),
+    url('PPMori-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Mori';
+    src: url('PPMori-Regular.eot');
+    src: url('PPMori-Regular.eot?#iefix') format('embedded-opentype'),
+    url('PPMori-Regular.woff2') format('woff2'),
+    url('PPMori-Regular.woff') format('woff'),
+    url('PPMori-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Mori';
+    src: url('PPMori-ExtraBold.eot');
+    src: url('PPMori-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('PPMori-ExtraBold.woff2') format('woff2'),
+    url('PPMori-ExtraBold.woff') format('woff'),
+    url('PPMori-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Mori Book';
+    src: url('PPMori-BookItalic.eot');
+    src: url('PPMori-BookItalic.eot?#iefix') format('embedded-opentype'),
+    url('PPMori-BookItalic.woff2') format('woff2'),
+    url('PPMori-BookItalic.woff') format('woff'),
+    url('PPMori-BookItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Mori';
+    src: url('PPMori-SemiBold.eot');
+    src: url('PPMori-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('PPMori-SemiBold.woff2') format('woff2'),
+    url('PPMori-SemiBold.woff') format('woff'),
+    url('PPMori-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Mori';
+    src: url('PPMori-SemiBoldItalic.eot');
+    src: url('PPMori-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('PPMori-SemiBoldItalic.woff2') format('woff2'),
+    url('PPMori-SemiBoldItalic.woff') format('woff'),
+    url('PPMori-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Mori';
+    src: url('PPMori-SemiBold_1.eot');
+    src: url('PPMori-SemiBold_1.eot?#iefix') format('embedded-opentype'),
+    url('PPMori-SemiBold_1.woff2') format('woff2'),
+    url('PPMori-SemiBold_1.woff') format('woff'),
+    url('PPMori-SemiBold_1.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Mori';
+    src: url('PPMori-SemiBoldItalic_1.eot');
+    src: url('PPMori-SemiBoldItalic_1.eot?#iefix') format('embedded-opentype'),
+    url('PPMori-SemiBoldItalic_1.woff2') format('woff2'),
+    url('PPMori-SemiBoldItalic_1.woff') format('woff'),
+    url('PPMori-SemiBoldItalic_1.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Mori';
+    src: url('PPMori-ExtraBoldItalic.eot');
+    src: url('PPMori-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('PPMori-ExtraBoldItalic.woff2') format('woff2'),
+    url('PPMori-ExtraBoldItalic.woff') format('woff'),
+    url('PPMori-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Mori';
+    src: url('PPMori-RegularItalic_1.eot');
+    src: url('PPMori-RegularItalic_1.eot?#iefix') format('embedded-opentype'),
+    url('PPMori-RegularItalic_1.woff2') format('woff2'),
+    url('PPMori-RegularItalic_1.woff') format('woff'),
+    url('PPMori-RegularItalic_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Mori';
+    src: url('PPMori-ExtraBold_1.eot');
+    src: url('PPMori-ExtraBold_1.eot?#iefix') format('embedded-opentype'),
+    url('PPMori-ExtraBold_1.woff2') format('woff2'),
+    url('PPMori-ExtraBold_1.woff') format('woff'),
+    url('PPMori-ExtraBold_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Mori Book';
+    src: url('PPMori-BookItalic_1.eot');
+    src: url('PPMori-BookItalic_1.eot?#iefix') format('embedded-opentype'),
+    url('PPMori-BookItalic_1.woff2') format('woff2'),
+    url('PPMori-BookItalic_1.woff') format('woff'),
+    url('PPMori-BookItalic_1.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Mori';
+    src: url('PPMori-Regular_1.eot');
+    src: url('PPMori-Regular_1.eot?#iefix') format('embedded-opentype'),
+    url('PPMori-Regular_1.woff2') format('woff2'),
+    url('PPMori-Regular_1.woff') format('woff'),
+    url('PPMori-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Mori Book';
+    src: url('PPMori-Book_1.eot');
+    src: url('PPMori-Book_1.eot?#iefix') format('embedded-opentype'),
+    url('PPMori-Book_1.woff2') format('woff2'),
+    url('PPMori-Book_1.woff') format('woff'),
+    url('PPMori-Book_1.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Mori';
+    src: url('PPMori-ExtralightItalic_1.eot');
+    src: url('PPMori-ExtralightItalic_1.eot?#iefix') format('embedded-opentype'),
+    url('PPMori-ExtralightItalic_1.woff2') format('woff2'),
+    url('PPMori-ExtralightItalic_1.woff') format('woff'),
+    url('PPMori-ExtralightItalic_1.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Mori';
+    src: url('PPMori-Extralight_1.eot');
+    src: url('PPMori-Extralight_1.eot?#iefix') format('embedded-opentype'),
+    url('PPMori-Extralight_1.woff2') format('woff2'),
+    url('PPMori-Extralight_1.woff') format('woff'),
+    url('PPMori-Extralight_1.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Mori';
+    src: url('PPMori-ExtraBoldItalic_1.eot');
+    src: url('PPMori-ExtraBoldItalic_1.eot?#iefix') format('embedded-opentype'),
+    url('PPMori-ExtraBoldItalic_1.woff2') format('woff2'),
+    url('PPMori-ExtraBoldItalic_1.woff') format('woff'),
+    url('PPMori-ExtraBoldItalic_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
     font-display: swap;
 }
 
